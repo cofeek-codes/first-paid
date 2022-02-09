@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
+
 .header__burger {
   display: none;
   visibility: hidden;
@@ -27,9 +29,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-white-like:before {
-  content: "\e900";
-  color: #fff;
+.icon-vk:before {
+  content: "\ea98";
 }
 
 * {
@@ -121,7 +122,7 @@ h6 {
 }
 
 body {
-  font: normal normal 16px/1 "";
+  font: normal normal 16px/1 "Ubuntu";
   color: black;
 }
 

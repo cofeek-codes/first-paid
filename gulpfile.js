@@ -35,7 +35,6 @@ const watcher = () => {
     watch("./src/fonts/*.*", fonts).on("all", browserSync.reload);
     watch("./src/img/icons/*.*", icons).on("all", browserSync.reload);
     watch("./src/img/favicon/*.*", favicon).on("all", browserSync.reload);
-    watch("./dist/**/*.*", zipar).on("all", browserSync.reload);
 
 }
 
@@ -190,8 +189,8 @@ exports.removedir = removedir;
 exports.dev = series(
     removedir,
     parallel(html, style, javascript, images, svg, fonts, icons, favicon),
-    parallel(watcher, server),
-    zipar
+    parallel(watcher, server)
+
 
 );
 
