@@ -1,0 +1,21 @@
+@import "_adaptive";
+@import "_fonts";
+
+$dc: black;
+
+$wrapper: 1389;
+
+$fixedheaderheight: 98;
+
+.__title {
+    font-family: $ffm;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 5.3125rem;
+}
+@media (max-width: 932px) {
+    .__title {
+        @include fza(12, 64);
+    }
+}
