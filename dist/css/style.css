@@ -494,6 +494,10 @@
   height: 100%;
 }
 
+.blog__wrapper {
+  margin-bottom: 41px;
+}
+
 .blog__inner-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -556,6 +560,25 @@
 
 .post__content {
   width: 610px;
+}
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.copyright__text {
+  font-family: "Heebo";
+  font-weight: 500;
+  line-height: 44px;
+  color: #000;
 }
 
 .__title {
@@ -714,6 +737,10 @@ img {
 
   .large__card__content__title {
     font-size: calc(16px + 24 * (100vw / 1389));
+  }
+
+  .copyright__text {
+    font-size: calc(14px + 16 * (100vw / 1389));
   }
 }
 
@@ -969,6 +996,10 @@ img {
 
   .large__card__content__title {
     font-size: calc(16px + (24 + 24 * 0.7) * ((100vw - 320px) / 1389));
+  }
+
+  .copyright__text {
+    font-size: calc(14px + (16 + 16 * 0.7) * ((100vw - 320px) / 1389));
   }
 }
 
