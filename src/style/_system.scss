@@ -21,6 +21,35 @@
         align-items: center;
     }
 }
+@media (max-width: 1197px) {
+    .system__card {
+        width: 100%;
+    }
+    .system__card__img {
+        height: 100%;
+    }
+}
+@media (max-width: 1038px) {
+    .system__card {
+        flex-direction: column;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .system__card__content__title {
+        padding-top: 15px;
+    }
+    .system__card__content__bottom {
+        margin-bottom: 15px;
+    }
+    .system__card__img {
+        width: 100%;
+    }
+}
+@media (max-width: 700px) {
+    .system__card {
+        width: 100%;
+    }
+}
 .system__card__content {
     padding-left: 65px;
     margin-right: 93px;
@@ -68,5 +97,5 @@
 }
 .system__card__img {
     width: 523px;
-    height: 297px;
+    height: 100%;
 }

@@ -14,6 +14,7 @@
     // .cards__card
 
     &__card {
+        grid-column: span 1;
         width: 300px;
     }
 }
@@ -81,5 +82,17 @@
     :active {
         border-bottom: 1px solid #000;
         padding-bottom: 3px;
+    }
+}
+
+@media (max-width: 1007px) {
+    .cards__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards__card {
+        grid-column: span 3;
+        margin-bottom: 25px;
     }
 }
