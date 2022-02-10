@@ -1,3 +1,4 @@
+@import "_adaptive";
 @import "_fonts";
 
 $dc: black;
@@ -10,6 +11,6 @@ $fixedheaderheight: 98;
     font-family: $ffm;
     font-style: italic;
     font-weight: bold;
-    font-size: 64px;
-    line-height: 85px;
+    @include fza(12, 64);
+    line-height: 5.3125rem;
 }
