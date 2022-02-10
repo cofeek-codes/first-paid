@@ -1,8 +1,12 @@
 .intro {
+    height: 100vh;
+    width: 100%;
     // .intro__wrapper
 
     &__wrapper {
-        background: #fff url("src/img/intro-bg.png") center center/cover no-repeat;
+        background: #fff url(../img/intro-bg.png) center center/cover no-repeat;
+        filter: blur(5px);
+        padding: 84px 446px 192px 94px;
     }
 
     // .intro__title
