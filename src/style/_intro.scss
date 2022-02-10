@@ -31,8 +31,12 @@
         }
     }
     @media (max-width: 970px) {
-        .intro__title {
-            width: auto;
+        .intro__title,
+        .intro__subtitle {
+            width: fit-content;
+        }
+        .intro__subtitle {
+            white-space: nowrap;
         }
     }
 

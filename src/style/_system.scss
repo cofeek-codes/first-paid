@@ -49,6 +49,11 @@
     .system__card {
         width: 100%;
     }
+    .system__card__content__main {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
 }
 .system__card__content {
     padding-left: 65px;
@@ -58,7 +63,7 @@
     color: #2d3748;
     font-family: $ffi;
     font-weight: bold;
-    font-size: 30px;
+    @include fza(16, 30);
     line-height: 36px;
     margin-bottom: 33px;
 }

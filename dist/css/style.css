@@ -307,8 +307,10 @@
 }
 
 .system__card__content__title {
-  font: bold 30px/36px "Inter";
   color: #2d3748;
+  font-family: "Inter";
+  font-weight: bold;
+  line-height: 36px;
   margin-bottom: 33px;
 }
 
@@ -557,6 +559,10 @@ img {
   .intro__subtitle {
     font-size: calc(12px + 20 * (100vw / 1389));
   }
+
+  .system__card__content__title {
+    font-size: calc(16px + 14 * (100vw / 1389));
+  }
 }
 
 @media (max-width: 1197px) {
@@ -614,8 +620,15 @@ img {
 }
 
 @media (max-width: 970px) {
-  .intro .intro__title {
-    width: auto;
+  .intro .intro__title,
+  .intro .intro__subtitle {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .intro .intro__subtitle {
+    white-space: nowrap;
   }
 }
 
@@ -749,11 +762,21 @@ img {
   .intro__subtitle {
     font-size: calc(12px + (20 + 20 * 0.7) * ((100vw - 320px) / 1389));
   }
+
+  .system__card__content__title {
+    font-size: calc(16px + (14 + 14 * 0.7) * ((100vw - 320px) / 1389));
+  }
 }
 
 @media (max-width: 700px) {
   .system__card {
     width: 100%;
+  }
+
+  .system__card__content__main {
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
 }
 
