@@ -1,0 +1,47 @@
+.system {
+    // .system__wrapper
+
+    &__wrapper {
+    }
+
+    // .system__title
+
+    &__title {
+        margin-bottom: 65px;
+    }
+
+    // .system__card
+
+    &__card {
+        width: 1168px;
+        box-shadow: 5px 5px 23px 1px #000;
+        display: flex;
+        align-items: center;
+    }
+}
+.system__card__content {
+    padding-left: 65px;
+    margin-right: 93px;
+}
+.system__card__content__title {
+    font-family: $ffi;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 33px;
+}
+.system__card__content__main {
+    width: 487px;
+    font-family: $ffi;
+    margin-bottom: 36px;
+    font-size: 14px;
+    line-height: 17px;
+}
+.system__card__img {
+    width: 523px;
+    height: 297px;
+}
+.scbel__date {
+}
+.scbel__more {
+}
