@@ -1,5 +1,10 @@
 @import "_avs";
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
     padding-top: 22px;
     // background: #fff;
     // .header__wrapper
@@ -37,7 +42,7 @@
         &:last-child {
             margin: 0;
         }
-        &:last-child > .nav__list-item-link::after {
+        &:nth-child(4) > .nav__list-item-link::after {
             display: none;
         }
     }
@@ -69,6 +74,7 @@
         :focus,
         :active {
             &::after {
+                content: "";
                 visibility: visible;
                 transform: translateX(0);
                 opacity: 1;
@@ -85,4 +91,48 @@
     :active {
         transform: scale(1.2);
     }
+}
+
+.sub-list {
+    transition: 0.3s ease all;
+    transform: translateY(-100%);
+    visibility: hidden;
+    opacity: 0;
+    width: 300px;
+    height: auto;
+    position: absolute;
+    top: 98px;
+    left: 1070px;
+    background: #000;
+    right: 0;
+    z-index: 3;
+    padding: 15px;
+
+    // .sub-list__item
+
+    &__item {
+        margin-bottom: 15px;
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    // .sub-list__item-link
+
+    &__item-link {
+        transition: 0.3s ease all;
+        &:hover,
+        :focus,
+        :active {
+            font-weight: bold;
+        }
+        font-size: 21px;
+        line-height: 17px;
+        color: #fff;
+    }
+}
+.nav__list li:hover > .sub-list {
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
 }

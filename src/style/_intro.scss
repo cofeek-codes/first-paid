@@ -1,0 +1,24 @@
+.intro {
+    // .intro__wrapper
+
+    &__wrapper {
+        background: #fff url("src/img/intro-bg.png") center center/cover no-repeat;
+    }
+
+    // .intro__title
+
+    &__title {
+        margin: 84px 0 61px 0;
+        width: 849px;
+    }
+
+    // .intro__subtitle
+
+    &__subtitle {
+        font-family: $ffm;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 85px;
+    }
+}

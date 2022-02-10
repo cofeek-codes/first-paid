@@ -41,7 +41,7 @@ const isMobile = { Android: function () { return navigator.userAgent.match(/Andr
 
 
 if (isMobile.any()) {
-    document.body.classList.add('_mobile');
+    document.body.classList.add('__mobile');
 
     let menuarrows = document.querySelectorAll('.link-arrow');
     if (menuarrows.length > 0) {
@@ -55,7 +55,7 @@ if (isMobile.any()) {
     }
 
 } else {
-    document.body.classList.add('_pc');
+    document.body.classList.add('__pc');
 
 }
 
@@ -116,7 +116,6 @@ if (isMobile.any()) {
     };
     scrollTo();
 }());
-
 
 
 
