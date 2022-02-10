@@ -6,7 +6,7 @@
     right: 0;
     z-index: 5;
     padding-top: 22px;
-    // background: #fff;
+    background: #fff;
     // .header__wrapper
 
     &__wrapper {
@@ -33,6 +33,7 @@
 
     &__list {
         display: flex;
+        align-items: center;
     }
 
     // .nav__list-item
