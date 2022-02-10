@@ -1,4 +1,5 @@
 .system {
+    margin-bottom: 63px;
     // .system__wrapper
 
     &__wrapper {
@@ -13,6 +14,7 @@
     // .system__card
 
     &__card {
+        border-radius: 11px;
         width: 1168px;
         box-shadow: 5px 5px 23px 1px #000;
         display: flex;
@@ -24,6 +26,7 @@
     margin-right: 93px;
 }
 .system__card__content__title {
+    color: #2d3748;
     font-family: $ffi;
     font-weight: bold;
     font-size: 30px;
@@ -31,17 +34,39 @@
     margin-bottom: 33px;
 }
 .system__card__content__main {
+    color: #718096;
+
     width: 487px;
     font-family: $ffi;
     margin-bottom: 36px;
     font-size: 14px;
     line-height: 17px;
 }
+.system__card__content__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.scbel__date {
+    color: #718096;
+    font-family: $ffi;
+    font-size: 12px;
+    line-height: 15px;
+}
+.scbel__more {
+    color: #2d3748;
+    font-family: $ffi;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    transition: 0.3s ease all;
+    &:hover,
+    :focus,
+    :active {
+        border-bottom: 1px solid #000;
+        padding-bottom: 3px;
+    }
+}
 .system__card__img {
     width: 523px;
     height: 297px;
-}
-.scbel__date {
-}
-.scbel__more {
 }

@@ -280,11 +280,16 @@
   }
 }
 
+.system {
+  margin-bottom: 63px;
+}
+
 .system__title {
   margin-bottom: 65px;
 }
 
 .system__card {
+  border-radius: 11px;
   width: 1168px;
   -webkit-box-shadow: 5px 5px 23px 1px #000;
   box-shadow: 5px 5px 23px 1px #000;
@@ -303,18 +308,103 @@
 
 .system__card__content__title {
   font: bold 30px/36px "Inter";
+  color: #2d3748;
   margin-bottom: 33px;
 }
 
 .system__card__content__main {
   font: 14px/17px "Inter";
+  color: #718096;
   width: 487px;
   margin-bottom: 36px;
+}
+
+.system__card__content__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.scbel__date {
+  font: 12px/15px "Inter";
+  color: #718096;
+}
+
+.scbel__more {
+  font: bold 12px/15px "Inter";
+  color: #2d3748;
+  -webkit-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+.scbel__more:hover,
+.scbel__more :focus,
+.scbel__more :active {
+  border-bottom: 1px solid #000;
+  padding-bottom: 3px;
 }
 
 .system__card__img {
   width: 523px;
   height: 297px;
+}
+
+.cards__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cards__card {
+  width: 300px;
+}
+
+.card__body {
+  padding-top: 18px;
+}
+
+.card__title {
+  font: bold 20px/24px "Inter";
+  margin-bottom: 15px;
+  color: #2d3748;
+}
+
+.card__content {
+  font: 14px/17px "Inter";
+  color: #718096;
+  margin-bottom: 22px;
+}
+
+.card__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.scbel__date {
+  font: 12px/15px "Inter";
+  color: #718096;
+}
+
+.scbel__more {
+  font: bold 12px/15px "Inter";
+  color: #2d3748;
+  -webkit-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+.scbel__more:hover,
+.scbel__more :focus,
+.scbel__more :active {
+  border-bottom: 1px solid #000;
+  padding-bottom: 3px;
 }
 
 .__title {
