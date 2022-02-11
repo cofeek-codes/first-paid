@@ -14,227 +14,241 @@
 <body>
 
     <header class="header">
-    <div class="header__wrapper">
-        <div class="header__logo"><a href="/"><img src="./src/img/svg/header__logo.svg" alt="logo"
-                    class="header__logo-pic"></a></div>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__list-item"><a href="/" class="nav__list-item-link">Главная</a></li>
-                <li class="nav__list-item"><a href="#!" class="nav__list-item-link sub__open">Разделы</a></li>
-                <li class="nav__list-item"><a href="./src/pages/about/index.html" class="nav__list-item-link">О
-                        проекте</a></li>
-                <li class="nav__list-item"><a href="" class="nav__list-item-link vk-logo-link"><img
-                            src="./src/img/svg/vk.svg" alt="" class="vk-logo"></a></li>
-                <li class="nav__list-item">
-                    <ul class="sub-list">
-                        <li class="sub-list__item js-scroll"><a href="#intro"
-                                class="sub-list__item-link js-scroll">Главная</a>
-                        </li>
-                        <li class="sub-list__item js-scroll"><a href="#system"
-                                class="sub-list__item-link js-scroll">Удобный
-                                блог</a>
-                        </li>
-                        <li class="sub-list__item js-scroll"><a href="#cards"
-                                class="sub-list__item-link js-scroll">Новые
-                                статьи</a>
-                        </li>
-                        <li class="sub-list__item js-scroll"><a href="#blog" class="sub-list__item-link js-scroll">Мой
-                                блог</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <div class="header__nav-close">
-                <span class="header__nav-close__line-1 nav-close__line"></span>
-                <span class="header__nav-close__line-2 nav-close__line"></span>
+        <div class="header__wrapper">
+            <div class="header__logo"><a href="/"><img src="./src/img/svg/header__logo.svg" alt="logo"
+                        class="header__logo-pic"></a></div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__list-item"><a href="/" class="nav__list-item-link">Главная</a></li>
+                    <li class="nav__list-item"><a href="#!" class="nav__list-item-link sub__open">Разделы</a>
+                        <div class="sub__arrow"></div>
+                    </li>
+                    <li class="nav__list-item"><a href="./src/pages/about/index.html" class="nav__list-item-link">О
+                            проекте</a></li>
+                    <li class="nav__list-item"><a href="" class="nav__list-item-link vk-logo-link"><img
+                                src="./src/img/svg/vk.svg" alt="" class="vk-logo"></a></li>
+                    <li class="nav__list-item">
+                        <ul class="sub-list">
+                            <li class="sub-list__item js-scroll"><a href="#intro"
+                                    class="sub-list__item-link js-scroll">Главная</a>
+                            </li>
+                            <li class="sub-list__item js-scroll"><a href="#system"
+                                    class="sub-list__item-link js-scroll">Удобный
+                                    блог</a>
+                            </li>
+                            <li class="sub-list__item js-scroll"><a href="#cards"
+                                    class="sub-list__item-link js-scroll">Новые
+                                    статьи</a>
+                            </li>
+                            <li class="sub-list__item js-scroll"><a href="#blog"
+                                    class="sub-list__item-link js-scroll">Мой
+                                    блог</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="header__nav-close">
+                    <span class="header__nav-close__line-1 nav-close__line"></span>
+                    <span class="header__nav-close__line-2 nav-close__line"></span>
+                </div>
+            </nav>
+            <div class="header__burger burger">
+                <span class="burger__line burger__line_top"></span>
+                <span class="burger__line burger__line_center"></span>
+                <span class="burger__line burger__line_bottom"></span>
             </div>
-        </nav>
-        <div class="header__burger burger">
-            <span class="burger__line burger__line_top"></span>
-            <span class="burger__line burger__line_center"></span>
-            <span class="burger__line burger__line_bottom"></span>
         </div>
-    </div>
-</header>
+    </header>
 
 
     <main class="main">
-    <div class="intro" id="intro">
-    <div class="wrapper">
-        <div class="intro__wrapper">
-            <h1 class="intro__title __title">Новый инновационный блог</h1>
-            <div class="intro__subtitle">Что нового?</div>
-        </div>
-    </div>
-</div>
-    <div class="system" id="system">
-    <div class="wrapper">
-        <div class="system__wrapper">
-            <div class="system__title __title">
-                Новая система блога
-            </div>
-            <div class="system__card">
-
-                <div class="system__card__content">
-                    <div class="system__card__content__title">long established</div>
-                    <div class="system__card__content__main">It is a long established fact that a reader will be
-                        distracted by the readable content of a page when looking at its layout. The point of using
-                        Lorem Ipsum is that....</div>
-                    <div class="system__card__content__bottom">
-                        <div class="scbel scbel__date">May 20th 2020</div>
-                        <div class="scbel scbel__more">Read more</div>
-                    </div>
+        <div class="intro" id="intro">
+            <div class="wrapper">
+                <div class="intro__wrapper">
+                    <h1 class="intro__title __title">Новый инновационный блог</h1>
+                    <div class="intro__subtitle">Что нового?</div>
                 </div>
-                <div class="system__card__img">
-                    <img src="./src/img/lc-img.png" alt="" class="system__card__img-pic">
-                </div>
-
             </div>
         </div>
-    </div>
-</div>
-    <div class="cards" id="cards">
-    <div class="wrapper">
-        <div class="cards__wrapper">
-            <div class="cards__grid">
-                <!--1-->
-                <div class="cards__card">
-                    <div class="card__img"><img src="./src/img/card.png" alt="" class="card__img-pic"></div>
-                    <div class="card__body">
-                        <div class="card__title">
-                            long established
-                        </div>
-                        <div class="card__content">
-                            It is a long established fact that a reader will be distracted by the readable content of a
-                            page
-                            when looking at its layout. The point of using Lorem Ipsum is that....
-                        </div>
-                        <div class="card__bottom">
-                            <div class="scbel scbel__date">May 20th 2020</div>
-                            <div class="scbel scbel__more">Read more</div>
-                        </div>
+        <div class="system" id="system">
+            <div class="wrapper">
+                <div class="system__wrapper">
+                    <div class="system__title __title">
+                        Новая система блога
                     </div>
-                </div>
-                <!--2-->
-                <div class="cards__card">
-                    <div class="card__img"><img src="./src/img/card.png" alt="" class="card__img-pic"></div>
-                    <div class="card__body">
-                        <div class="card__title">
-                            long established
+                    <div class="system__card">
+
+                        <div class="system__card__content">
+                            <div class="system__card__content__title">long established</div>
+                            <div class="system__card__content__main">It is a long established fact that a reader will be
+                                distracted by the readable content of a page when looking at its layout. The point of
+                                using
+                                Lorem Ipsum is that....</div>
+                            <div class="system__card__content__bottom">
+                                <div class="scbel scbel__date">May 20th 2020</div>
+                                <div class="scbel scbel__more">Read more</div>
+                            </div>
                         </div>
-                        <div class="card__content">
-                            It is a long established fact that a reader will be distracted by the readable content of a
-                            page
-                            when looking at its layout. The point of using Lorem Ipsum is that....
+                        <div class="system__card__img">
+                            <img src="./src/img/lc-img.png" alt="" class="system__card__img-pic">
                         </div>
-                        <div class="card__bottom">
-                            <div class="scbel scbel__date">May 20th 2020</div>
-                            <div class="scbel scbel__more">Read more</div>
-                        </div>
-                    </div>
-                </div>
-                <!--3-->
-                <div class="cards__card">
-                    <div class="card__img"><img src="./src/img/card.png" alt="" class="card__img-pic"></div>
-                    <div class="card__body">
-                        <div class="card__title">
-                            long established
-                        </div>
-                        <div class="card__content">
-                            It is a long established fact that a reader will be distracted by the readable content of a
-                            page
-                            when looking at its layout. The point of using Lorem Ipsum is that....
-                        </div>
-                        <div class="card__bottom">
-                            <div class="scbel scbel__date">May 20th 2020</div>
-                            <div class="scbel scbel__more">Read more</div>
-                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-    <div class="large" id="large">
-    <div class="wrapper">
-        <div class="large__wrapper">
-            <div class="large__card">
-
-                <div class="large__card__content">
-                    <div class="large__card__content__title">What is Lorem Ipsum?</div>
-                    <div class="large__card__content__main">It is a long established fact that a reader will be
-                        distracted by the readable content of a page when looking at its layout. The point of using
-                        Lorem Ipsum is that....</div>
-                    <div class="large__card__content__bottom">
-                        <div class="scbel scbel__date">May 20th 2020</div>
-                        <div class="scbel scbel__more">Read more</div>
-                    </div>
-                </div>
-                <div class="large__card__img">
-                    <img src="./src/img/t-card.png" alt="" class="large__card__img-pic">
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
-    <div class="blog" id="blog">
-    <div class="wrapper">
-        <div class="blog__wrapper">
-            <!--!MAIN START-->
-
-            <div class="blog__inner-wrapper">
-                <div class="mega-title">Blog</div>
-                <div class="section">
-                    <div class="content-row">
-                        <div class="news__title title-of-presentations">UI Interactions of the week</div>
-                        <div class="post__date-type">
-                            <span class="post__date">12 Feb 2019</span>
-                            <span class="post__project-type">Express, Handlebars</span>
+        <div class="cards" id="cards">
+            <div class="wrapper">
+                <div class="cards__wrapper">
+                    <div class="cards__grid">
+                        <!--1-->
+                        <div class="cards__card">
+                            <div class="card__img"><img src="./src/img/card.png" alt="" class="card__img-pic"></div>
+                            <div class="card__body">
+                                <div class="card__title">
+                                    long established
+                                </div>
+                                <div class="card__content">
+                                    It is a long established fact that a reader will be distracted by the readable
+                                    content of a
+                                    page
+                                    when looking at its layout. The point of using Lorem Ipsum is that....
+                                </div>
+                                <div class="card__bottom">
+                                    <div class="scbel scbel__date">May 20th 2020</div>
+                                    <div class="scbel scbel__more">Read more</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="post__content default__main-text">Amet minim mollit non deserunt ullamco est sit
-                            aliqua
-                            dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
-                            consequat sunt nostrud amet.</div>
-                    </div>
-                    <div class="content-row">
-                        <div class="news__title title-of-presentations">UI Interactions of the week</div>
-                        <div class="post__date-type">
-                            <span class="post__date">12 Feb 2019</span>
-                            <span class="post__project-type">Express, Handlebars</span>
+                        <!--2-->
+                        <div class="cards__card">
+                            <div class="card__img"><img src="./src/img/card.png" alt="" class="card__img-pic"></div>
+                            <div class="card__body">
+                                <div class="card__title">
+                                    long established
+                                </div>
+                                <div class="card__content">
+                                    It is a long established fact that a reader will be distracted by the readable
+                                    content of a
+                                    page
+                                    when looking at its layout. The point of using Lorem Ipsum is that....
+                                </div>
+                                <div class="card__bottom">
+                                    <div class="scbel scbel__date">May 20th 2020</div>
+                                    <div class="scbel scbel__more">Read more</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="post__content default__main-text">Amet minim mollit non deserunt ullamco est sit
-                            aliqua
-                            dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
-                            consequat sunt nostrud amet.</div>
-                    </div>
-                    <div class="content-row">
-                        <div class="news__title title-of-presentations">UI Interactions of the week</div>
-                        <div class="post__date-type">
-                            <span class="post__date">12 Feb 2019</span>
-                            <span class="post__project-type">Express, Handlebars</span>
+                        <!--3-->
+                        <div class="cards__card">
+                            <div class="card__img"><img src="./src/img/card.png" alt="" class="card__img-pic"></div>
+                            <div class="card__body">
+                                <div class="card__title">
+                                    long established
+                                </div>
+                                <div class="card__content">
+                                    It is a long established fact that a reader will be distracted by the readable
+                                    content of a
+                                    page
+                                    when looking at its layout. The point of using Lorem Ipsum is that....
+                                </div>
+                                <div class="card__bottom">
+                                    <div class="scbel scbel__date">May 20th 2020</div>
+                                    <div class="scbel scbel__more">Read more</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="post__content default__main-text">Amet minim mollit non deserunt ullamco est sit
-                            aliqua
-                            dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
-                            consequat sunt nostrud amet.</div>
                     </div>
                 </div>
             </div>
-
-            <!--!MAIN END-->
         </div>
-    </div>
-</div>
-</main>
+        <div class="large" id="large">
+            <div class="wrapper">
+                <div class="large__wrapper">
+                    <div class="large__card">
+
+                        <div class="large__card__content">
+                            <div class="large__card__content__title">What is Lorem Ipsum?</div>
+                            <div class="large__card__content__main">It is a long established fact that a reader will be
+                                distracted by the readable content of a page when looking at its layout. The point of
+                                using
+                                Lorem Ipsum is that....</div>
+                            <div class="large__card__content__bottom">
+                                <div class="scbel scbel__date">May 20th 2020</div>
+                                <div class="scbel scbel__more">Read more</div>
+                            </div>
+                        </div>
+                        <div class="large__card__img">
+                            <img src="./src/img/t-card.png" alt="" class="large__card__img-pic">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blog" id="blog">
+            <div class="wrapper">
+                <div class="blog__wrapper">
+                    <!--!MAIN START-->
+
+                    <div class="blog__inner-wrapper">
+                        <div class="mega-title">Blog</div>
+                        <div class="section">
+                            <div class="content-row">
+                                <div class="news__title title-of-presentations">UI Interactions of the week</div>
+                                <div class="post__date-type">
+                                    <span class="post__date">12 Feb 2019</span>
+                                    <span class="post__project-type">Express, Handlebars</span>
+                                </div>
+                                <div class="post__content default__main-text">Amet minim mollit non deserunt ullamco est
+                                    sit
+                                    aliqua
+                                    dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation
+                                    veniam
+                                    consequat sunt nostrud amet.</div>
+                            </div>
+                            <div class="content-row">
+                                <div class="news__title title-of-presentations">UI Interactions of the week</div>
+                                <div class="post__date-type">
+                                    <span class="post__date">12 Feb 2019</span>
+                                    <span class="post__project-type">Express, Handlebars</span>
+                                </div>
+                                <div class="post__content default__main-text">Amet minim mollit non deserunt ullamco est
+                                    sit
+                                    aliqua
+                                    dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation
+                                    veniam
+                                    consequat sunt nostrud amet.</div>
+                            </div>
+                            <div class="content-row">
+                                <div class="news__title title-of-presentations">UI Interactions of the week</div>
+                                <div class="post__date-type">
+                                    <span class="post__date">12 Feb 2019</span>
+                                    <span class="post__project-type">Express, Handlebars</span>
+                                </div>
+                                <div class="post__content default__main-text">Amet minim mollit non deserunt ullamco est
+                                    sit
+                                    aliqua
+                                    dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation
+                                    veniam
+                                    consequat sunt nostrud amet.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--!MAIN END-->
+                </div>
+            </div>
+        </div>
+    </main>
 
 
 
     <footer class="footer">
-    <div class="footer__wrapper">
-        <div class="copyright__text">Copyright 2022 &copy;</div>
-    </div>
-</footer>
+        <div class="footer__wrapper">
+            <div class="copyright__text">Copyright 2022 &copy;</div>
+        </div>
+    </footer>
 
 
 
