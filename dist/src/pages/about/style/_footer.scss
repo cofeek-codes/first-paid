@@ -1,0 +1,21 @@
+.footer {
+    position: fixed;
+    top: 95%;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    padding-bottom: 18px;
+    transform: translateY(-18px);
+}
+.footer__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyright__text {
+    font-family: $ffh;
+    font-weight: 500;
+    @include fza(14, 30);
+    line-height: 44px;
+    color: #000;
+}

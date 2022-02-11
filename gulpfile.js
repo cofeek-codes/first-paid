@@ -35,6 +35,7 @@ const watcher = () => {
     watch("./src/fonts/*.*", fonts).on("all", browserSync.reload);
     watch("./src/img/icons/*.*", icons).on("all", browserSync.reload);
     watch("./src/img/favicon/*.*", favicon).on("all", browserSync.reload);
+    watch("./src/pages/**/*.*", pages).on("all", browserSync.reload);
 
 }
 
@@ -173,6 +174,11 @@ const zipar = () => {
         .pipe(zip('dist.zip'))
         .pipe(dest("./dist"))
 }
+const pages = () => {
+    console.log("PAGES");
+    return src("./src/pages/**/*.*")
+        .pipe(dest("./dist/src/pages"))
+}
 
 // Build
 exports.html = html;
@@ -184,11 +190,12 @@ exports.fonts = fonts;
 exports.icons = icons;
 exports.favicon = favicon;
 exports.zipar = zipar;
+exports.pages = pages;
 exports.watch = watcher;
 exports.removedir = removedir;
 exports.dev = series(
     removedir,
-    parallel(html, style, javascript, images, svg, fonts, icons, favicon),
+    parallel(html, style, javascript, images, svg, fonts, icons, favicon, pages),
     parallel(watcher, server)
 
 );
