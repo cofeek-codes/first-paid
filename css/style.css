@@ -572,32 +572,7 @@
   font: italic bold 64px/5.3125rem "Montserrat";
 }
 
-@font-face {
-  font-family: "icons";
-  src: url("../src/img/icons/fonts/icons.ttf?x391n") format("truetype"), url("../src/img/icons/fonts/icons.woff?x391n") format("woff"), url("../src/img/icons/fonts/icons.svg?x391n#icons") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
 
-[class^=icon-]::before,
-[class*=" icon-"]::before {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icons" !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-vk:before {
-  content: "\ea98";
-}
 
 * {
   padding: 0;
