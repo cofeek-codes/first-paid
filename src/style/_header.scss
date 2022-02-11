@@ -84,6 +84,7 @@
         }
     }
 }
+
 .vk-logo {
     width: 57px;
     height: 57px;
@@ -97,9 +98,6 @@
 
 .sub-list {
     transition: 0.3s ease all;
-    transform: translateY(-100%);
-    visibility: hidden;
-    opacity: 0;
     width: 300px;
     height: auto;
     position: absolute;
@@ -132,9 +130,4 @@
         line-height: 17px;
         color: #fff;
     }
-}
-.nav__list li:hover > .sub-list {
-    transform: translateY(0);
-    visibility: visible;
-    opacity: 1;
 }

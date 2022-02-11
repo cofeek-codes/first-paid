@@ -132,11 +132,6 @@
   -webkit-transition: 0.3s ease all;
   -o-transition: 0.3s ease all;
   transition: 0.3s ease all;
-  -webkit-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  transform: translateY(-100%);
-  visibility: hidden;
-  opacity: 0;
   width: 300px;
   height: auto;
   position: absolute;
@@ -169,14 +164,6 @@
 .sub-list__item-link :focus,
 .sub-list__item-link :active {
   font-weight: bold;
-}
-
-.nav__list li:hover > .sub-list {
-  -webkit-transform: translateY(0);
-  -ms-transform: translateY(0);
-  transform: translateY(0);
-  visibility: visible;
-  opacity: 1;
 }
 
 .header__burger {

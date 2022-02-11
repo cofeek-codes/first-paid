@@ -28,6 +28,28 @@
 
 // BURGER
 
+// // SUBLIST
+
+// function sublist() {
+//     const sub__list = document.querySelector('.sub__open');
+//     const menu = document.querySelector('.sub__list');
+
+//     sub__list.addEventListener('click', () => {
+//         menu.classList.toggle('sub__list__active');
+//     });
+
+//     // close on click-on-link
+//     const menulinks = document.querySelectorAll('.nav__list-item-link');
+//     if (window.innerWidth < 768) {
+//         for (let i = 0; i < menulinks.length; i += 1) {
+//             menulinks[i].addEventListener('click', () => {
+//                 menu.classList.remove('nav-active');
+//             });
+//         }
+//     }
+// }
+// // SUBLIST
+
 
 // OS CHECK
 
